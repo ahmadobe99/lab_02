@@ -23,6 +23,34 @@ class MyApp extends StatelessWidget {
               width: 500,
               height: 300,
             ),
+            Container(child:  Row(children: [
+               // SizedBox(width: 0),
+                Card(
+                  shadowColor: Colors.purple,
+                  elevation: 20,
+                  child: Text(
+                    "Kitty",
+                    style: TextStyle(color: Colors.amber, fontSize: 35),
+                  ),
+                ),
+                 SizedBox(width: 20),
+                Card(
+                  shadowColor: Colors.yellow,
+                  elevation: 20,
+                  child: Text(
+                    "2Months",
+                    style: TextStyle(color: Colors.green, fontSize:35),
+                  ),
+                ),
+                SizedBox(width: 20),
+                Card(color: Colors.blueGrey,
+                  elevation: 20,
+                  child: Text(
+                    "Female",
+                    style: TextStyle(color: Colors.red, fontSize: 35),
+                  ),
+                )
+              ])),
             Divider(
              height: 100,
             color: Colors.white,
@@ -66,36 +94,7 @@ class MyApp extends StatelessWidget {
                   ),
                 )
               ])),
-            Center(
-              child: Row(children: [
-               // SizedBox(width: 0),
-                Card(
-                  shadowColor: Colors.purple,
-                  elevation: 20,
-                  child: Text(
-                    "Kitty",
-                    style: TextStyle(color: Colors.amber, fontSize: 35),
-                  ),
-                ),
-                 SizedBox(width: 20),
-                Card(
-                  shadowColor: Colors.yellow,
-                  elevation: 20,
-                  child: Text(
-                    "2Months",
-                    style: TextStyle(color: Colors.green, fontSize:35),
-                  ),
-                ),
-                SizedBox(width: 20),
-                Card(color: Colors.blueGrey,
-                  elevation: 20,
-                  child: Text(
-                    "Female",
-                    style: TextStyle(color: Colors.red, fontSize: 35),
-                  ),
-                )
-              ]),
-            )
+           
             
           ]),
         ),
